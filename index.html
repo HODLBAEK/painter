@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>심플한 그림판</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <canvas> </canvas>
+  <div class="color">
+    <input type="color" id="color" />
+    <div class="color-option" style="background-color: #ff0054;" data-color="#ff0054"></div>
+    <div class="color-option" style="background-color: #a4161a;" data-color="#a4161a"></div>
+    <div class="color-option" style="background-color: #9e0059;" data-color="#9e0059"></div>
+    <div class="color-option" style="background-color: #027d00;" data-color="#027d00"></div>
+    <div class="color-option" style="background-color: #ff5400;" data-color="#ff5400"></div>
+    <div class="color-option" style="background-color: #390099;" data-color="#390099"></div>
+    <div class="color-option" style="background-color: #5e548e;" data-color="#5e548e"></div>
+    <div class="color-option" style="background-color: #e7d8c9;" data-color="#e7d8c9"></div>
+    <div class="color-option" style="background-color: #a7a0a0;" data-color="#a7a0a0"></div>
+    <div class="color-option" style="background-color: #000000;" data-color="#000000"></div>
+  </div>
+  <div class="modify">
+    <label for="line-width" id="line-width-label">Change Width</label>
+    <input type="range" step="0.1" id="line-width" min="1" max="10" value="5" />
+    <button class="btn" id="mode-btn">In Draw Mode</button>
+    <button class="btn" id="eraser-btn">Eraser</button>
+    <button class="btn" id="reset-btn">RESET</button>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
